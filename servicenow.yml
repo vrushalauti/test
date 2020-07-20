@@ -1,0 +1,6 @@
+plugin: servicenow.servicenow.now
+table: cmdb_ci_linux_server
+keyed_groups:
+  - key: sn_sys_class_name | lower
+    prefix: ''
+    separator: ''
