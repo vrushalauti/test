@@ -1,6 +1,7 @@
 plugin: servicenow.servicenow.now
 table: cmdb_ci_linux_server
 fields: [ip_address,fqdn,host_name,sys_class_name,name,os,u_patch_window]
+selection_order: [fqdn,ip_address,host_name,name]
 keyed_groups:
   - key: sn_sys_class_name | lower
     prefix: ''
