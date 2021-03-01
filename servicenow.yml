@@ -1,4 +1,7 @@
 plugin: servicenow.servicenow.now
+instance: https://dev80111.service-now.com/
+username: admin
+password: P@ssw0rd123
 table: cmdb_ci_linux_server
 fields: [ip_address,fqdn,host_name,sys_class_name,name,os,u_patch_window]
 keyed_groups:
