@@ -1,16 +1,6 @@
----
-- name: Using ServiceNow Collection
-  hosts: localhost
-  gather_facts: no
-
-  tasks:
-  - name: Create an incident
-    servicenow.servicenow.snow_record:
-      username: admin
-      password: P@ssw0rd123
-      instance: dev80111
-      state: present
-      data:
-        short_description: "This is a test incident opened by Ansible"
-        severity: 3
-        priority: 2
+  
+plugin: servicenow.servicenow.now
+host: dev80111.service-now.com
+username: admin
+password: P@ssw0rd123
+fields: [name,host_name,fqdn,ip_address,sys_class_name, install_status, classification,vendor]
